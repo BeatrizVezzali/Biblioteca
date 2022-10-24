@@ -6,15 +6,15 @@
 
 <form asp-action="Registro" method="post">
 
-    <input type="text" asp-for="Nome" id="userNome" placeholder="Nome">
+    <input type="text" asp-for="Nome" id="Nome" placeholder="Nome">
 
-    <input type="text" asp-for="Login" id="userLogin" placeholder="Login">
+    <input type="text" asp-for="Login" id="Login" placeholder="Login">
 
-    <input type="text" asp-for="Senha" id="userSenha" placeholder="Senha">
+    <input type="text" asp-for="Senha" id="Senha" placeholder="Senha">
 
     
 
-    <select asp-for="Tipo" id="userTipo">
+    <select asp-for="Tipo" id="Tipo">
 
         <option value="@Usuario.ADMIN">Administrador</option>
 

@@ -1,14 +1,16 @@
 using Biblioteca.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Biblioteca.Controllers
 {
-    public class UsuariosController : Controller
+    public class UsuarioController : Controller
     {
-        public IActionResult Lista()
+        public IActionResult Lista(string Nome, string Login, int Tipo)
         {
             Autenticacao.CheckLogin(this);
             Autenticacao.verificaSeUsuarioEAdmin(this);
+
             return View(new UsuarioService().Listar());
         }
 
@@ -17,7 +19,7 @@ namespace Biblioteca.Controllers
             return View();
         }
 
-        public IActionResult Registro()
+        public IActionResult Registro(string Nome, string Login, string Senha)
         {
             Autenticacao.CheckLogin(this);
             Autenticacao.verificaSeUsuarioEAdmin(this);

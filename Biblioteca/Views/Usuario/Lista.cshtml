@@ -4,13 +4,13 @@
     ViewData["Title"] = "Lista";
 }
 
-<h1>Usuários cadastrados no sistema</h1>
+<h1>Usuários cadastrados no sistema:</h1>
 
 
 <p class="text-danger">@ViewData["Mensagem"]</p>
 
 
-<table class="table">
+<table class="table table-striped">
 
     <thead>
 
@@ -57,9 +57,9 @@
 
             
 
-            <td><a href="Editar?id=@u.Id">editar</a></td>
+            <td><a href="Editar?id=@u.Id">Editar</a></td>
 
-            <td><a href="Excluir?id=@u.Id">excluir</a></td>
+            <td><a href="Excluir?id=@u.Id">Excluir</a></td>
 
         </tr>
 
@@ -70,4 +70,4 @@
 </table>
 
 
-<a href="RegistrarUsuarios">Registrar novo usuário</a>
+<a href="Registro">Registrar novo usuário</a>
