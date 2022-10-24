@@ -66,7 +66,7 @@ namespace Biblioteca.Controllers
         {
             if(!(controller.Request.HttpContext.Session.GetInt32("Tipo")== Usuario.ADMIN))
             {
-                controller.Request.HttpContext.Response.Redirect("Usuario/NeedAdmin");
+                controller.Request.HttpContext.Response.Redirect("/Usuario/NeedAdmin");
             }
         }
     }
